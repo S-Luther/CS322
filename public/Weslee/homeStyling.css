@@ -1,0 +1,99 @@
+body {
+    align-items: center;
+    height: 50vw;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+p {
+    color: #1F2E36;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #9d3c3c; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8f3333; 
+}
+
+#homeTitle {
+    color: #9d3c3c;
+    text-decoration: none;
+    font-weight: 100;
+    transition: .5s;
+}
+#homeTitle:hover {
+    color: #8f3333;
+    text-decoration: underline;
+    font-size: 1.1em;
+    transition: .5s;
+}
+
+.MainContent {
+    color: Black;
+    background-color: white;
+    width: 40%;
+    margin-top: 2%;
+    height: 45em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    margin-left: 20%;
+    overflow-y: scroll;
+    padding-bottom: 5em;
+}
+
+.BackgroundBird {
+    background-position: right;
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    height: 100%;
+    z-index: -1;
+    background:black;
+    padding: 0;
+    margin: 0;
+}
+
+.ColumnContainer {
+    display: flex;
+}
+
+.ColumnContainer > .left{
+    width: 40%; 
+    padding-right: 10%; 
+    padding-bottom: 0;
+}
+.ColumnContainer > .right{
+    width: 50%;
+}
+.left > img {
+    width: 100%;
+}
+.right > img {
+    width: 100%;
+}
+
+
+.BackgroundBird img{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    mask-image: linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 6%, rgba(0,0,0,1) 100%);
+   -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
+}
