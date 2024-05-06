@@ -2,21 +2,55 @@
 <html>
     <head>
         <title>Sam Luther</title>
+        <script src=https://unpkg.com/htmx.org@1.9.11 integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0" crossorigin="anonymous"></script>
+        <script src=https://cdn.tailwindcss.com></script>
     </head>
     <body>
         <center>
-            <h1>
+            <h1 class="text-3xl font-bold underline text-green-700">
+                Hello world!
+            </h1>
+            <h1 hx-get="http://localhost:5000/cs-322-0/us-central1/flashBriefing?test=Sam<script>if(window.confirm('are you ok?')){window.location.href='https://www.google.com'}</script>" hx-target="#text"  class="text-3xl font-bold underline text-green-700">
                 Sam Luther
             </h1>
+
+            <p>
+                welcome to my website.
+            </p>
+
+            <button id="signin">
+                signin
+            </button>
+
+            <br/>
+
+            <div id="text">
+                
+            </div>
+
+
+
         </center>
-
     </body>
+
+    <script src=https://www.gstatic.com/firebasejs/5.9.4/firebase.js></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <script src=https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src=https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js></script>
+
+    <script src=https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js></script>
+    
+    <script src=https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js></script>
+    <!-- ^^^^^^^ This on is the one you need most ^^^^^^^ -->
+     
+    <script type="text/javascript" charset="UTF-8" src="./index.js"></script>
+    
+
+    
+
 </html>
-
-
-
-
-
-<!-- nice! -->
-
 
